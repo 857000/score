@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Document</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 200px;
+            padding-top: 20px;
+        }
+
+        .app-link {
+            display: inline-block;
+            padding: 12px 24px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid var(--primary-color);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover Effect for .html page link */
+        .app-link:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Formal Application Container */
+        .application-container {
+            background: #ffffff;
+            width: 800px;
+            padding: 60px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            position: relative;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Decorative Sparkling Lotus Container */
+        .lotus-container {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Dimension handling (60px to 80px animation) */
+            animation: pulseDimension 3s ease-in-out infinite alternate;
+        }
+
+        /* Pure CSS Lotus Flower Flower */
+        .lotus {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .petal {
+            position: absolute;
+            background: radial-gradient(circle, #ff9a9e 0%, #fecfef 99%, #fe9a8b 100%);
+            border-radius: 50% 0 50% 0;
+            transform-origin: bottom right;
+            opacity: 0.9;
+        }
+
+        .petal.center {
+            width: 40%;
+            height: 80%;
+            bottom: 10%;
+            right: 30%;
+            transform: rotate(-45deg);
+            z-index: 3;
+        }
+
+        .petal.left {
+            width: 35%;
+            height: 70%;
+            bottom: 10%;
+            right: 45%;
+            transform: rotate(-80deg);
+            z-index: 2;
+        }
+
+        .petal.right {
+            width: 35%;
+            height: 70%;
+            bottom: 10%;
+            right: 15%;
+            transform: rotate(-10deg);
+            z-index: 2;
+        }
+
+        /* Sparkling / Glitter Effect Particles */
+        .sparkle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 2px #fff, 0 0 15px 4px #ff9a9e;
+            opacity: 0;
+            animation: sparkleAnim 2s infinite ease-in-out;
+        }
+
+        .sp1 { top: -10px; left: 20px; animation-delay: 0s; }
+        .sp2 { top: 30px; left: -10px; animation-delay: 0.5s; }
+        .sp3 { bottom: 10px; right: -10px; animation-delay: 1s; }
+
+        /* Animations */
+        @keyframes pulseDimension {
+            0% {
+                width: 60px;
+                height: 60px;
+            }
+            100% {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        @keyframes sparkleAnim {
+            0%, 100% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+
+        /* Application Text Formatting */
+        .app-header {
+            margin-bottom: 40px;
+        }
+        .app-date {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .app-subject {
+            font-weight: bold;
+            margin: 20px 0;
+            text-decoration: underline;
+        }
+        .app-signature {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar with Page Link -->
+    <div class="sidebar">
+        <a href="adding.html" class=""D:\index .html.pdf"">click here  to view markscard</a>
+    </div>
+
+    <!-- Main Application Document -->
+    <div class="application-container">
+        
+        <!-- Sparkling Lotus Component -->
+        <div class="lotus-container">
+            <div class="lotus">
+                <div class="petal left"></div>
+                <div class="petal center"></div>
+                <div class="petal right"></div>
+            </div>
+            <!-- Sparkle Elements -->
+            <div class="sparkle sp1"></div>
+            <div class="sparkle sp2"></div>
+            <div class="sparkle sp3"></div>
+        </div>
+
+        <!-- Application Content -->
+        <div class="app-date">Date: October 15, 2026</div>
+
+        <div class="app-header">
+            To,<br>
+            The Director / Principal,<br>
+            [Organization/Institution Name],<br>
+            [City, State, Zip Code]
+        </div>
+
+        <div class="app-subject">
+            Subject: Application for [Insert Purpose of Application Here]
+        </div>
+
+        <div class="app-body">
+            <p>Respected Sir/Madam,</p>
+            <p>
+                I am writing this application to formally request your approval regarding [state your core purpose clearly, e.g., leave of absence, project submission, or resource allocation]. 
+            </p>
+            <p>
+                [Provide 2-3 sentences explaining the necessary details or context behind your request here. Keep the language professional, direct, and objective.]
+            </p>
+            <p>
+                I kindly request you to process my application at your earliest convenience. I have attached all relevant documents required for your reference. Thank you for your time and consideration.
+            </p>
+        </div>
+
+        <div class="app-signature">
+            Yours faithfully,<br><br>
+            <strong>[Your Full Name]</strong><br>
+            [Your Designation/Roll Number]<br>
+            [Contact Information]
+        </div>
+
+    </div>
+
+</body>
+</html>
